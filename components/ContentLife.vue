@@ -1,0 +1,121 @@
+<template>
+<section class="two-column">
+    <div class="column" style="background-color:#FFF0F5;">
+        <div class="inner-container container">
+            <div class = "text-in-content">
+                <p class = "icon-text" >
+                <img  src= "../assets/icon/icon1.png">
+                30 Days free trial</p>
+                <p class = "title">Life Should Be Easy.</p>
+                <div class="icon-jam">
+                <img class="jam" src="../assets/icon/icon-jam-removebg-preview.png">
+                </div>
+                <p class = "quote"> financial transaction remotely using a mobile device such as a smartphone or tablet</p>
+                <a href = "" class="getButton"><span>Get started</span></a>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <div class="column">
+    <img class="column-img" src= "../assets/images/content.png">
+    </div>
+</section>
+</template>
+
+<style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+$font: "open sans bold", sans-serif;
+
+.two-column{
+    display: flex;
+    .column{  
+        width: 50%;
+        height: calc(100vh - 80px);
+        .column-img{
+            height: 100%;
+            width: 100%;
+        }
+        .inner-container {
+            height: 100%;
+            display: flex;
+            -webkit-box-flex-direction: column;
+            -moz-box-flex-direction: column;
+            flex-direction: column;
+            justify-content: center;
+            -webkit-justify-content: center;
+            .text-in-content{
+                padding-bottom: 50px;
+                text-align: left;
+                max-width: 45%;
+                margin-left: 10%;
+                .icon-jam{
+                    width:20px;
+                }
+                .icon-jam{
+                    position: relative;
+                    .jam{
+                        position: absolute;
+                        left: 310px;
+                        top: 0px; 
+                        width: 50px;
+                    }
+                }
+                .icon-text{
+                    font-family: $font;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    img{
+                        width: 20px;
+                }
+                }
+            }
+            .title{
+                margin: 0;
+                font-family: $font;
+                font-weight: bold;
+                line-height: 80px;
+                letter-spacing: 0;
+                font-size: 3.5em;
+            }
+            .quote{
+                font-family: $font;
+                font-size: 14px;
+                line-height: 20px;
+                max-width: 60%;
+                color: #A9A9A9;
+                padding-bottom: 30px;
+            }
+            .getButton{
+                
+                border-radius: 10px;
+                background-color: #25274D;
+                padding: 10px 40px;
+                display: inline-block;
+                cursor: pointer;
+                right: 25px;
+                text-decoration: none;
+                transition: all .2s ease;
+                color: #fff;
+                span{
+                    font-family: $font;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        pointer-events: none;
+                }
+            }
+        }
+    }
+    
+}
+
+.container{
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+</style>
+

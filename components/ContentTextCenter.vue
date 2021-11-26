@@ -1,0 +1,57 @@
+<template>
+<section class="center-text">
+    <div class="container">
+    <p class="text-Title">
+        <strong>How it works</strong>
+    </p>
+    <p class="text-content">
+        Mobile banking differs from mobile payments, which involes the use of a mobile device 
+    </p>
+    </div>
+</section>
+
+</template>
+
+<style lang = "scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+$font: "open sans bold", sans-serif;
+.center-text{
+    padding-top: 90px;
+    padding-bottom: 40px;
+    .container{
+        text-align: center;
+        max-width: 680px;
+        display: flex;
+        -webkit-box-flex-direction: column;
+        -moz-box-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        -webkit-align-items: center;
+    .text-Title{
+        margin: 0 0 30px;
+        text-align: center;
+        font-family: $font;
+        font-size: 31px;
+        line-height: 37px;
+        letter-spacing: 0;
+        color: #000;
+    }
+    .text-content{
+        margin: 0;
+        text-align: center;
+        font-family: $font;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 0;
+        color: #A9A9A9;
+    }
+    }
+}
+.container{
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+</style>
