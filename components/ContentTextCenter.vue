@@ -43,6 +43,7 @@ $font: "open sans bold", sans-serif;
         font-size: 16px;
         line-height: 29px;
         letter-spacing: 0;
+        max-width: 400px;
         color: #A9A9A9;
     }
     }
