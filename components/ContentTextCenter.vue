@@ -5,7 +5,7 @@
         <strong>How it works</strong>
     </p>
     <p class="text-content">
-        Mobile banking differs from mobile payments, which involes the use of a mobile device 
+        Mobile banking differs from mobile payments, which involes the use of a mobile device. 
     </p>
     </div>
 </section>
