@@ -1,19 +1,19 @@
 <template>
     <section class="header">
         <div class="header-wrapper">
-          <a href="" class="logo">
-            <img src= "../assets/images/besnik.png">
-          </a>
-          <div class="navigation">
+            <a href="" class="logo">
+            Besnik
+            </a>
+            <div class="navigation">
             <ul class = "header-link">
-                <li class= "header-link-item"><span>Business</span></li>
-                <li class= "header-link-item"><span>Pricing</span></li>
-                <li class= "header-link-item"><span>Features</span></li>
-                <li class= "header-link-item"><span>About</span></li>
+                <li class= "header-link-item"><a href="">Business</a></li>
+                <li class= "header-link-item"><a href="">Pricing</a></li>
+                <li class= "header-link-item"><a href="">Features</a></li>
+                <li class= "header-link-item"><a href="">About</a></li>
             </ul>
-          </div>
-          <div class="dashboard">
-           <a href="" class="dashboard-link">
+            </div>
+            <div class="dashboard">
+            <a href="" class="dashboard-link">
                 <span>Log in</span>
             </a>
             <a href="" class="dashboard-link">
@@ -22,14 +22,17 @@
                 </div>
             </a>
             </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
-$font: "open sans bold", sans-serif;
-
+@import '~assets/scss/style.scss';
 .header{
     background-color: #ffffff;
     text-align : left;
@@ -38,7 +41,25 @@ $font: "open sans bold", sans-serif;
     left: 0; 
     z-index: 99;
     width: 100%;
-    
+    .hamburger-menu{
+        display: none;
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            height: 20px;
+        }
+        @include android{
+            height: 16px;
+        }
+        span{
+            display: block;
+            width: 28px;
+            border-radius: 3px;
+            height: 3px;
+            background-color: #000;
+        }
+    }
     .header-wrapper{
         display: flex;
         align-items: center;
@@ -47,29 +68,51 @@ $font: "open sans bold", sans-serif;
         // margin-left: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
-       
+        @include android{
+            padding-top: 5px;
+        }
+        .logo{
+            text-decoration: none;
+            color:  #000;
+            font-family: $fontlogo;
+            font-size: 30px;
+            &:hover{
+                color: #A9A9A9;
+            }
+            @include android{
+                font-size: 25px;
+            }
+        }
         .navigation{
-            
+            @include android{
+                display: none;
+            }
             .header-link{
                 .header-link-item{
                     display: inline-block;
                     padding: 0 25px;
-                    color: #A9A9A9;
                     cursor: pointer;
                     &:hover{
-                        color: black;
+                    > a{
+                            color: black;
                     }
-                    span{
+                    }
+                    a{
+                        text-decoration: none;
                         font-family: $font;
                         font-size: 14px;
                         font-weight: 300;
                         line-height: 24px;
+                        color: #A9A9A9;
                         pointer-events: none;
                     }
                 }
             }
         }
         .dashboard{
+            @include android{
+                display: none;
+            }
             .dashboard-link{
                 display: inline-block;
                 padding: 0 15px;
