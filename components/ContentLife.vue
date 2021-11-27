@@ -27,11 +27,14 @@
 .two-column{
     display: flex;
     @include android{
-        display: none;
+        flex-direction: column;
     }
     .column{  
         width: 50%;
         height: calc(100vh - 80px);
+        @include android{
+            width:100%;
+        }
         .column-img{
             height: 100%;
             width: 100%;
@@ -59,6 +62,10 @@
                         left: 310px;
                         top: 0px; 
                         width: 50px;
+                        @include android{
+                            left: 200px;
+                            width: 25px;
+                        }
                     }
                 }
                 .icon-text{
@@ -66,8 +73,14 @@
                     font-size: 14px;
                     font-weight: 300;
                     line-height: 24px;
+                    @include android{
+                        font-size: 10px;
+                    }
                     img{
                         width: 20px;
+                        @include android{
+                            width: 12px;
+                        }
                 }
                 }
             }
@@ -78,6 +91,11 @@
                 line-height: 80px;
                 letter-spacing: 0;
                 font-size: 3.5em;
+                @include android{
+                    font-size: 1.75em;
+                    line-height: 40px;
+                    letter-spacing: 0;
+                }
             }
             .quote{
                 font-family: $font;
@@ -86,6 +104,9 @@
                 max-width: 60%;
                 color: #A9A9A9;
                 padding-bottom: 30px;
+                @include android{
+                    font-size: 12px;
+                }
             }
             .getButton{
                 
@@ -98,12 +119,18 @@
                 text-decoration: none;
                 transition: all .2s ease;
                 color: #fff;
+                @include android{
+                    padding: 7px 25px;
+                }
                 span{
                     font-family: $font;
                         font-size: 14px;
                         font-weight: 300;
                         line-height: 24px;
                         pointer-events: none;
+                        @include android{
+                            font-size: 12px;
+                        }
                 }
             }
         }
