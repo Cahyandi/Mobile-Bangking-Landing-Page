@@ -53,6 +53,7 @@
         color: #A9A9A9;
         @include android{
             font-size: 14px;
+            line-height: 18px;
         }
     }
     }
