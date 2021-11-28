@@ -36,7 +36,7 @@
             width:100%;
         }
         .column-img{
-            height: 100%;
+            height: 75%;
             width: 100%;
         }
         .inner-container {
@@ -144,6 +144,9 @@
     padding-left: 50px;
     margin-right: auto;
     margin-left: auto;
+    @include android{
+        width: 75%;
+    }
 }
 </style>
 

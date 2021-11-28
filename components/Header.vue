@@ -41,6 +41,7 @@
     left: 0; 
     z-index: 99;
     width: 100%;
+   
     .hamburger-menu{
         display: none;
         @include tablet{
