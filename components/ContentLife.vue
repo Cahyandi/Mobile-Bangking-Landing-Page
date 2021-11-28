@@ -16,7 +16,7 @@
             <div></div>
         </div>
     </div>
-    <div class="column">
+    <div class="column two">
     <img class="column-img" src= "../assets/images/content.png">
     </div>
 </section>
@@ -29,6 +29,11 @@
     @include android{
         flex-direction: column;
     }
+    .column.two{
+        @include android{
+            height : 75%;
+        }
+    }
     .column{  
         width: 50%;
         height: calc(100vh - 80px);
@@ -36,8 +41,12 @@
             width:100%;
         }
         .column-img{
-            height: 75%;
+            height: 100%;
             width: 100%;
+            @include android
+            {
+                height: 75%;
+            }
         }
         .inner-container {
             height: 100%;

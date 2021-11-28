@@ -18,7 +18,8 @@
     padding-top: 90px;
     padding-bottom: 40px;
     @include android{
-        display:none;
+        padding-top: 45px;
+        padding-bottom: 20px;
     }
     .container{
         text-align: center;
@@ -35,8 +36,11 @@
         font-family: $font;
         font-size: 31px;
         line-height: 37px;
-        letter-spacing: 0;
         color: #000;
+        @include android{
+            font-size: 20px;
+            line-height: 0px;
+        }
     }
     .text-content{
         margin: 0;
@@ -45,8 +49,11 @@
         font-size: 16px;
         line-height: 29px;
         letter-spacing: 0;
-        max-width: 400px;
+        max-width: 250px;
         color: #A9A9A9;
+        @include android{
+            font-size: 14px;
+        }
     }
     }
 }
@@ -56,5 +63,8 @@
     padding-left: 50px;
     margin-right: auto;
     margin-left: auto;
+    @include android{
+        width: 75%;
+    }
 }
 </style>
