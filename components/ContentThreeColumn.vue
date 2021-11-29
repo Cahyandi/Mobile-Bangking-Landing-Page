@@ -77,7 +77,7 @@
                 padding-bottom: 10px;
                 font-weight: bold;
                 @include android{
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: bold;
                 }
             }
