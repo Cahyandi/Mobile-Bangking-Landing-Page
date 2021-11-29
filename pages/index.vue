@@ -5,6 +5,7 @@
   <ContentTextCenter />
   <ContentThreeColumn />
   <ContentDownload/>
+  <ContentConnection/>
   </section>
 </template>
 
