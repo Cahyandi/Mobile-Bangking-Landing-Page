@@ -32,12 +32,17 @@
     .container{
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #A9A9A9;
+        padding-bottom: 110px;
         @include android{
             flex-direction: column;
+            border-bottom: 1px solid #A9A9A9;
+            padding-bottom: 50px;
         }
         .content{
             max-width: 199px;
             padding: 0 125px;
+            
             @include android{
                 padding: 0;
                 text-align: center;

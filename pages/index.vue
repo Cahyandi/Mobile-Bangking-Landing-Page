@@ -4,6 +4,7 @@
   <ContentLife />
   <ContentTextCenter />
   <ContentThreeColumn />
+  <ContentDownload/>
   </section>
 </template>
 

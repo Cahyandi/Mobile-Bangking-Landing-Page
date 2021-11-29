@@ -13,7 +13,8 @@
                 <p class = "quote"> financial transaction remotely using a mobile device such as a smartphone or tablet</p>
                 <a href = "" class="getButton"><span>Get started</span></a>
             </div>
-            <div></div>
+            <div>
+            </div>
         </div>
     </div>
     <div class="column two">
