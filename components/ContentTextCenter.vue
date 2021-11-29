@@ -49,11 +49,12 @@
         font-size: 16px;
         line-height: 29px;
         letter-spacing: 0;
-        max-width: 250px;
+        max-width: 400px;
         color: #A9A9A9;
         @include android{
             font-size: 14px;
             line-height: 18px;
+            max-width: 250px;
         }
     }
     }

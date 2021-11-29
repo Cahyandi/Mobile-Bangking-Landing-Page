@@ -4,13 +4,20 @@
             <a href="" class="logo">
             Besnik
             </a>
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <ul id="dropdownMenu">
+                <li><a href="">Business</a></li>
+                </ul>
+            </div>
+            <!-- End Top Bar -->
             <div class="navigation">
-            <ul class = "header-link">
-                <li class= "header-link-item"><a href="">Business</a></li>
-                <li class= "header-link-item"><a href="">Pricing</a></li>
-                <li class= "header-link-item"><a href="">Features</a></li>
-                <li class= "header-link-item"><a href="">About</a></li>
-            </ul>
+                <ul class = "header-link">
+                    <li class= "header-link-item"><a href="">Business</a></li>
+                    <li class= "header-link-item"><a href="">Pricing</a></li>
+                    <li class= "header-link-item"><a href="">Features</a></li>
+                    <li class= "header-link-item"><a href="">About</a></li>
+                </ul>
             </div>
             <div class="dashboard">
             <a href="" class="dashboard-link">
@@ -23,10 +30,12 @@
             </a>
             </div>
             <div class="hamburger-menu">
+                <input type="checkbox" />
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            
         </div>
     </section>
 </template>
@@ -41,9 +50,39 @@
     left: 0; 
     z-index: 99;
     width: 100%;
-   
+    .top-bar{
+        display:none;
+        @include android{
+            display: block;
+        }
+        #dropdownMenu{
+            margin: 0;
+            padding: 25px 0;
+            background-color:#A9A9A9;
+            position: absolute;
+            width: 100%;
+            top: 75px;
+            left: 0;
+            z-index: 100;
+            list-style: none;
+            overflow: hidden;
+            opacity: 0;
+            border-top: 1px solid #d8d8d8;
+            transition: all 0.2s ease-in;
+            pointer-events: none;
+        }
+        #dropdownMenu.active {
+        overflow: visible;
+        opacity: 1;
+        pointer-events: auto;
+        overflow-y: scroll;
+        padding-bottom: 80px;
+        height: 100vh;
+    }
+    }
     .hamburger-menu{
         display: none;
+        position: relative;
         @include tablet{
             display: flex;
             flex-direction: column;
@@ -53,14 +92,49 @@
         @include android{
             height: 16px;
         }
-        span{
+        span {
             display: block;
-            width: 28px;
+            width: 21px;
             border-radius: 3px;
             height: 3px;
             background-color: #000;
+            transition: all 0.5s;
+            &:nth-child(2) {
+                transform-origin: 0 0;
+            }
+             &:nth-child(4) {
+                transform-origin: 0 100%;
+            }
         }
-    }
+        input {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            opacity: 0;
+            top: -8px;
+            left: -4px;
+            z-index: 2;
+            &:checked {
+                ~ {
+                    span {
+                        &:nth-child(2) {
+                            background-color: #708090;
+                            transform: rotate(45deg) translate(-1px, 1px);
+                        }
+                        &:nth-child(4) {
+                            background-color: #708090;
+						transform: rotate(-45deg) translate(-1px, 0);
+                        }
+                        &:nth-child(3) {
+                            transform: scale(0);
+                            opacity:0;
+                        }
+                    }
+                }
+            }
+        }
+}
+    
     .header-wrapper{
         display: flex;
         align-items: center;

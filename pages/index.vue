@@ -3,6 +3,7 @@
   <Header />
   <ContentLife />
   <ContentTextCenter />
+  <ContentThreeColumn />
   </section>
 </template>
 
