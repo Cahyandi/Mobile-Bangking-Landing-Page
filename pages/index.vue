@@ -6,6 +6,7 @@
   <ContentThreeColumn />
   <ContentDownload/>
   <ContentConnection/>
+  <ContentSubscribe />
   </section>
 </template>
 

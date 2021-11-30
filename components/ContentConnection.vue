@@ -1,5 +1,5 @@
 <template>
-<section class="download-app">
+<section class="connection">
 <div class = "container">
     <div class="column two">
         <div class="title">Connecting all your banking needs.</div>
@@ -19,11 +19,11 @@
 
 <style lang="scss" scoped>
 @import '~assets/scss/style.scss';
-.download-app{
+.connection{
     display: flex;
     justify-content: center;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     align-items: center;
     @include android{
         background-color:  #FFF0F5;
@@ -32,6 +32,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #A9A9A9;
         @include android{
             border-bottom: 1px solid #A9A9A9;
         }
