@@ -66,7 +66,12 @@
             .content-footer{
                     display: flex;
                     justify-content: space-between;
-                    
+                    border-bottom: 0.8px solid #A9A9A9;
+                    padding-bottom: 50px;
+                    @include android{
+                        flex-direction: column;
+                        padding-bottom: 20px;
+                    }
                     .service-nav{
                         .service-caption.logo{
                             text-decoration: none;
@@ -96,6 +101,11 @@
                             display: flex;
                             flex-direction: column;
                             max-width: 220px;
+                            @include android{
+                                margin-top: 10px;
+                                max-width: 250px;
+                                margin-bottom: 50px;
+                            }
                             .footer-link{
                                 display: block;
                                 color: #A9A9A9;
@@ -110,9 +120,11 @@
                             cursor: pointer;
                             display: flex;
                             justify-content: space-between;
-                            margin-right: 220px;
+                            margin-right: 90px;
+                            
                             img{
                                 height: 30px;
+                                
                             }
                         }
                         }
@@ -123,10 +135,16 @@
             padding-top: 70px;
             display: flex;
             justify-content: space-between;
+            @include android{
+                flex-direction: column;
+            }
             .copyright{
                 font-family: $font;
                 font-size: 15px;
                 color: #A9A9A9;
+                @include android{
+                    padding-bottom: 10px;
+                }
 
             }
             .create-by{
@@ -140,6 +158,10 @@
 
 
 .container {
+    @include android{
+        max-width: 300px;
+        padding-left: 20px;
+    }
     max-width: 1000px;
     width: 100%;
     padding-right: 50px;
