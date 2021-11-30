@@ -41,7 +41,7 @@
             input{
                 padding: 22px 50px;
                 border-radius: 8px;
-                background-color: #FFF0F5;
+                background-color: 	#F5F5F5;
                 border: 0.8px solid #FFF0F5;
                 margin-right: 30px;
                 @include android{

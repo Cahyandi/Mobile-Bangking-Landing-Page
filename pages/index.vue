@@ -7,6 +7,7 @@
   <ContentDownload/>
   <ContentConnection/>
   <ContentSubscribe />
+  <Footer />
   </section>
 </template>
 
