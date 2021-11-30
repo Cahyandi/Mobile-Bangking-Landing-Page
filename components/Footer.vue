@@ -127,7 +127,9 @@
                             display: flex;
                             justify-content: space-between;
                             margin-right: 90px;
-                            
+                            @include android{
+                                margin-right: 45px;
+                            }
                             img{
                                 height: 30px;
                                 
