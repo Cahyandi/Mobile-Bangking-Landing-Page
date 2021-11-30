@@ -70,7 +70,7 @@
                     padding-bottom: 50px;
                     @include android{
                         flex-direction: column;
-                        padding-bottom: 20px;
+                        padding-bottom: 25px;
                     }
                     .service-nav{
                         .service-caption.logo{
@@ -95,6 +95,9 @@
                                 letter-spacing: 0;
                                 color: #000;
                                 cursor: pointer;
+                                @include android{
+                                    font-size: 15px;
+                                }
                         }
                         .link-container{
                             margin-top: 30px;
@@ -103,8 +106,8 @@
                             max-width: 220px;
                             @include android{
                                 margin-top: 10px;
-                                max-width: 250px;
-                                margin-bottom: 50px;
+                                max-width: 180px;
+                                margin-bottom: 30px;
                             }
                             .footer-link{
                                 display: block;
@@ -115,6 +118,9 @@
                                 text-decoration: none;
                                 transition: all .2s ease;
                                 margin-bottom: 7px;
+                                @include android{
+                                    font-size: 12px;
+                                }
                             }
                     .icon{
                             cursor: pointer;

@@ -22,10 +22,10 @@
 
 .content-subscribe{
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
     @include android{
-        padding-top: 45px;
-        padding-bottom: 20px;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
     .container{
         text-align: center;
@@ -91,7 +91,7 @@
         color: #000;
         @include android{
             font-size: 20px;
-            line-height: 0px;
+            line-height: 20px;
         }
     }
     .text-content{
