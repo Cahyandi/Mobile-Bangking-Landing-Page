@@ -18,10 +18,11 @@
         </div>
     </div>
     <div class="column two">
-    <img class="column-img" src= "../assets/images/content.png">
+    <img class="column-img" src= "../assets/images/content.png" title="" v-lazy-load>
     </div>
 </section>
 </template>
+
 
 <style lang="scss" scoped>
 @import '~assets/scss/style.scss';
@@ -33,6 +34,7 @@
     .column.two{
         @include android{
             height : 75%;
+            
         }
     }
     .column{  

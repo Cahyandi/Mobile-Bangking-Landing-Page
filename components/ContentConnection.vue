@@ -10,7 +10,7 @@
         
     </div>
     <div class="column one">
-        <img class="column-img" src= "../assets/images/connecting.png">
+        <img class="column-img" src= "../assets/images/connecting.png" title="" v-lazy-load>
     </div>
     </div>
     </div>
