@@ -1,5 +1,5 @@
 <template>
-<section>
+<div data-scroll-container>
   <Header />
   <ContentLife />
   <ContentTextCenter />
@@ -8,9 +8,11 @@
   <ContentConnection/>
   <ContentSubscribe />
   <Footer />
-  </section>
+</div>
 </template>
 
-<script>
-export default {}
+<script >
+export default {
+ 
+}
 </script>

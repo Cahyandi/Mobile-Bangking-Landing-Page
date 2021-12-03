@@ -16,7 +16,7 @@
                     <li class= "header-link-item"><a href="">Business</a></li>
                     <li class= "header-link-item"><a href="">Pricing</a></li>
                     <li class= "header-link-item"><a href="">Features</a></li>
-                    <li class= "header-link-item"><a href="">About</a></li>
+                    <li class= "header-link-item"><a href="/Footer">About</a></li>
                 </ul>
             </div>
             <div class="dashboard">
