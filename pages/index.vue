@@ -1,5 +1,5 @@
 <template>
-<div data-scroll-container>
+<div id="js-scroll">
   <Header />
   <ContentLife />
   <ContentTextCenter />
@@ -8,11 +8,17 @@
   <ContentConnection/>
   <ContentSubscribe />
   <Footer />
-</div>
+  </div>
 </template>
 
 <script >
 export default {
- 
+ mounted() {
+    this.lmS = new this.locomotiveScroll({
+      el: document.querySelector("#js-scroll"),
+      smooth: true
+    });
+    console.log("lmS", this.lmS);
+  }
 }
 </script>
