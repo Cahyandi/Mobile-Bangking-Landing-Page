@@ -16,6 +16,7 @@
         "nuxt-lazy-load": "^1.2.9",
         "sass": "^1.43.5",
         "sass-loader": "^10.1.1",
+        "vue-burger-menu": "^2.0.5",
         "vue-smooth-scrollbar": "^1.0.3"
     },
     "devDependencies": {
