@@ -1,5 +1,5 @@
 <template>
-<section class="center-text">
+<section class="center-text"data-scroll-section >
     <div class="container">
     <p class="text-Title">
         <strong>How it works</strong>

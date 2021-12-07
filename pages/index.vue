@@ -1,5 +1,5 @@
 <template>
-<div id="js-scroll">
+<div id="js-scroll" >
   <Header />
   <ContentLife />
   <ContentTextCenter />
@@ -13,6 +13,11 @@
 
 <script >
 export default {
+  data() {
+    return {
+      lmS: null
+    };
+  },
  mounted() {
     this.lmS = new this.locomotiveScroll({
       el: document.querySelector("#js-scroll"),
@@ -22,3 +27,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+div {
+   min-height: 100%;
+}
+</style>

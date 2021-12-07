@@ -1,5 +1,5 @@
 <template>
-    <section class="footer">
+    <section class="footer" data-scroll-section>
         <div class="container">
                 <div class="content-footer">
                     <div class = "service-nav">

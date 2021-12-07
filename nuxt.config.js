@@ -4,13 +4,13 @@ export default {
         title: 'Mobile-Bangking-Landing-Page',
         htmlAttrs: {
             lang: 'en',
-            style: 'overflow-x: hidden; scroll-behavior: smooth;'
+            style: 'overflow-x: hidden; '
 
 
         },
-        // bodyAttrs: {
-        //     style: 'overflow-x: hidden;'
-        // },
+        bodyAttrs: {
+            style: 'overflow-x: hidden;'
+        },
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },

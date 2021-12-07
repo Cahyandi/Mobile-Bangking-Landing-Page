@@ -1,5 +1,5 @@
 <template>
-<section class="connection">
+<section class="connection"data-scroll-section >
 <div class = "container">
     <div class="column two">
         <div class="title">Connecting all your banking needs.</div>

@@ -1,5 +1,5 @@
 <template>
-    <section class="content-subscribe">
+    <section class="content-subscribe" data-scroll-section>
     <div class="container">
     <p class="text-Title">
         <strong>Subscribe Newsletter </strong>

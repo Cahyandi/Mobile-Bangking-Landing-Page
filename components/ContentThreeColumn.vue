@@ -1,5 +1,5 @@
 <template>
-<section class = "three-column">
+<section class = "three-column" data-scroll-section>
     <div class = "container">
         <div class="content">
             <div class="image"><img src="../assets/images/tc1.png"/></div>

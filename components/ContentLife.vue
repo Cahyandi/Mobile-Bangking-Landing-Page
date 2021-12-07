@@ -1,5 +1,5 @@
 <template>
-<section class="two-column">
+<section class="two-column"data-scroll-section >
     <div class="column" style="background-color:#FFF0F5;">
         <div class="inner-container container">
             <div class = "text-in-content">

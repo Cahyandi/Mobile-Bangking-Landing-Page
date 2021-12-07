@@ -1,5 +1,5 @@
 <template>
-<section class="download-app">
+<section class="download-app"data-scroll-section >
 <div class = "container">
     <div class="column one">
         <img class="column-img" src= "../assets/images/download.png" title="" v-lazy-load>
