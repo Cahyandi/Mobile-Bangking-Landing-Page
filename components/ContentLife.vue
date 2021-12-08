@@ -1,5 +1,5 @@
 <template>
-<section class="two-column"data-scroll-section >
+<section class="two-column" data-scroll-section >
     <div class="column" style="background-color:#FFF0F5;">
         <div class="inner-container container">
             <div class = "text-in-content">
@@ -27,9 +27,11 @@
 <style lang="scss" scoped>
 @import '~assets/scss/style.scss';
 .two-column{
+    padding-top: 80px;
     display: flex;
     @include android{
         flex-direction: column;
+        padding-top: 40px;
     }
     .column.two{
         @include android{

@@ -45,7 +45,7 @@
 .header{
     background-color: #ffffff;
     text-align : left;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0; 
     z-index: 99;
@@ -83,6 +83,7 @@
     .hamburger-menu{
         display: none;
         position: relative;
+            padding-right: 10px;
         @include tablet{
             display: flex;
             flex-direction: column;
@@ -141,8 +142,8 @@
         justify-content: space-between;
         // margin-right: 30px;
         // margin-left: 20px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         @include android{
             padding-top: 5px;
         }
@@ -151,6 +152,7 @@
             color:  #000;
             font-family: $fontlogo;
             font-size: 30px;
+            padding-left: 8px;
             &:hover{
                 color: #A9A9A9;
             }

@@ -9,7 +9,7 @@ export default {
 
         },
         bodyAttrs: {
-            style: 'overflow-x: hidden;'
+            style: 'overflow-x: hidden; '
         },
         meta: [
             { charset: 'utf-8' },
