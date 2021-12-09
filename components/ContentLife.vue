@@ -27,7 +27,7 @@
 <style lang="scss" scoped>
 @import '~assets/scss/style.scss';
 .two-column{
-    padding-top: 80px;
+    padding-top: 70px;
     display: flex;
     @include android{
         flex-direction: column;

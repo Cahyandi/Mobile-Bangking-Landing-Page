@@ -17,6 +17,7 @@
         "sass": "^1.43.5",
         "sass-loader": "^10.1.1",
         "vue-burger-menu": "^2.0.5",
+        "vue-smooth-scroll": "^1.0.13",
         "vue-smooth-scrollbar": "^1.0.3"
     },
     "devDependencies": {
