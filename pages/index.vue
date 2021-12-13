@@ -19,12 +19,14 @@ export default {
     };
   },
  mounted() {
-    this.lmS = new this.locomotiveScroll({
+    
+    setTimeout(()=>{
+      cthis.lmS = new this.locomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true
-      
     });
+    }, 1000);
     console.log("lmS", this.lmS);
-  }
+  },
 }
 </script>
