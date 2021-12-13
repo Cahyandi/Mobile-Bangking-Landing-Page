@@ -22,6 +22,7 @@ export default {
     this.lmS = new this.locomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true
+      
     });
     console.log("lmS", this.lmS);
   }
