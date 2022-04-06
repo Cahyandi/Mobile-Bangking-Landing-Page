@@ -2,17 +2,17 @@
 <section class = "three-column" data-scroll-section>
     <div class = "container">
         <div class="content">
-            <div class="image"><img src="../assets/images/tc1.png"/></div>
+            <div class="image"  data-aos="fade-up"><img src="../assets/images/tc1.png"/></div>
             <div class="title">Information</div>
             <div class="desc">Enter your information ensure your details safe and more secure</div>
         </div>
         <div class="content">
-            <div class="image"><img src="../assets/images/tc2.png"/></div>
+            <div class="image"  data-aos="fade-down"><img src="../assets/images/tc2.png"/></div>
             <div class="title">Data Secure</div>
-            <div class="desc">Sending  money faster & eaiser with end to end encryption.</div>
+            <div class="desc two">Sending  money faster & eaiser with end to end encryption.</div>
         </div>
         <div class="content">
-            <div class="image three"><img src="../assets/images/tc3.png"/></div>
+            <div class="image three"  data-aos="fade-up"><img src="../assets/images/tc3.png"/></div>
             <div class="title">Add Cards</div>
             <div class="desc">Add Multiple cards and track your daily expense with quality interface</div>
         </div>
@@ -29,6 +29,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     align-items: center;
+    
     .container{
         display: flex;
         justify-content: space-between;
@@ -49,6 +50,10 @@
                 max-width: 199px;
                 padding-bottom: 50px;
             }
+            @include tablet{
+                padding: 0 50px;
+                padding-bottom: 20px;
+            }
             .image{
                 text-align:center;
                 height: 200px;
@@ -56,9 +61,15 @@
                 @include android{
                     height: 100px;
                 }
+                @include tablet{
+                    height: 180px;
+                }
                 img{
                     height: 150px;
                     @include android{
+                        height: 100px;
+                    }
+                    @include tablet{
                         height: 100px;
                     }
                 }
@@ -68,11 +79,15 @@
                 @include android{
                     height: 110px;
                 }
+                @include tablet{
+                    height: 180px;
+                }
                 img{
                     height: 150px;
                     @include android{
                         height: 110px;
                     }
+                    
                 }
             }
             .title{
@@ -85,6 +100,9 @@
                     font-size: 18px;
                     font-weight: bold;
                 }
+                @include tablet{
+                    font-size: 20px;
+                }
             }
             .desc{
                 font-family: $font;
@@ -96,6 +114,24 @@
                 @include android{
                     font-size: 12px;
                     color:#A9A9A9;
+                }
+                @include tablet{
+                    padding-top: 20px
+                }
+            }
+            .desc.two{
+                font-family: $font;
+                text-align: center;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color:#A9A9A9;
+                @include android{
+                    font-size: 12px;
+                    color:#A9A9A9;
+                }
+                @include tablet{
+                    padding-top: 0px;
                 }
             }
         }

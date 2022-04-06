@@ -1,8 +1,8 @@
 <template>
-    <section class="header" data-scroll-section>
-    
+    <section class="header" >
+
         <div class="header-wrapper">
-            <a href="" class="logo">
+            <a href="" class="logo" data-aos="fade-right">
             Besnik
             </a>
             <!-- Top Bar -->
@@ -30,7 +30,7 @@
                 </div>
             </a>
             </div>
-            <div class="hamburger-menu">
+            <div class="hamburger-menu" @click="test">
                 <input type="checkbox" />
                 <span></span>
                 <span></span>
@@ -51,6 +51,9 @@
     left: 0; 
     z-index: 99;
     width: 100%;
+    @include tablet{
+        
+    }
     .top-bar{
         display:none;
         @include android{
@@ -73,12 +76,12 @@
             pointer-events: none;
         }
         #dropdownMenu.active {
-        overflow: visible;
-        opacity: 1;
-        pointer-events: auto;
-        overflow-y: scroll;
-        padding-bottom: 80px;
-        height: 100vh;
+            overflow: visible;
+            opacity: 1;
+            pointer-events: auto;
+            overflow-y: scroll;
+            padding-bottom: 80px;
+            height: 100vh;
     }
     }
     .hamburger-menu{
@@ -148,6 +151,13 @@
         @include android{
             padding-top: 5px;
         }
+        @include tablet{
+            margin-left: 30px;
+            margin-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
         .logo{
             text-decoration: none;
             color:  #000;
@@ -160,9 +170,15 @@
             @include android{
                 font-size: 25px;
             }
+            @include tablet{
+            font-size: 30px;
+        }
         }
         .navigation{
             @include android{
+                display: none;
+            }
+            @include tablet{
                 display: none;
             }
             .header-link{
@@ -189,6 +205,9 @@
         }
         .dashboard{
             @include android{
+                display: none;
+            }
+             @include tablet{
                 display: none;
             }
             .dashboard-link{
@@ -223,7 +242,15 @@
         }
     }
 }
-
-
-
 </style>
+<script>
+
+export default {
+  methods: {
+    test() {
+      console.log('this is a nice test!!')
+    },
+    
+  },
+}
+</script>

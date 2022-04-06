@@ -59,6 +59,8 @@
 .footer{
     background-color: #F5F5F5;
     width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     .container{
         padding-top: 80px;
         padding-bottom: 50px;
@@ -71,6 +73,9 @@
                     @include android{
                         flex-direction: column;
                         padding-bottom: 25px;
+                    }
+                    @include tablet{
+                        
                     }
                     .service-nav{
                         .service-caption.logo{

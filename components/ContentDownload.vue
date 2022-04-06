@@ -1,7 +1,7 @@
 <template>
 <section class="download-app" data-scroll-section >
 <div class = "container">
-    <div class="column one"  >
+    <div class="column one" data-aos="fade-right" >
         <img class="column-img" src= "../assets/images/download.png" title="" v-lazy-load>
     </div>
     <div class="column two">

@@ -9,7 +9,7 @@
         </a>
         
     </div>
-    <div class="column one">
+    <div class="column one" data-aos="fade-left">
         <img class="column-img" src= "../assets/images/connecting.png" title="" v-lazy-load>
     </div>
     </div>
@@ -27,6 +27,8 @@
     align-items: center;
     @include android{
         background-color:  #FFF0F5;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
     }
     .container{  
         display: flex;

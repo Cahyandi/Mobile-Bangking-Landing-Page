@@ -27,16 +27,18 @@
 <style lang="scss" scoped>
 @import '~assets/scss/style.scss';
 .two-column{
-    padding-top: 70px;
+    padding-top: 65px;
     display: flex;
     @include android{
         flex-direction: column;
         padding-top: 40px;
     }
+    @include tablet{
+        padding-top: 40px;
+    }
     .column.two{
         @include android{
             height : 75%;
-            
         }
     }
     .column{  
@@ -44,12 +46,16 @@
         height: calc(100vh - 80px);
         @include android{
             width:100%;
+            
+        }
+        @include android{
+            width: 100%;
+            height: calc(100vh - 80px);
         }
         .column-img{
             height: 100%;
             width: 100%;
-            @include android
-            {
+            @include android{
                 height: 75%;
             }
         }
@@ -61,14 +67,17 @@
             flex-direction: column;
             justify-content: center;
             -webkit-justify-content: center;
+            @include tablet{
+                height: 110%;
+            }
             .text-in-content{
                 padding-bottom: 50px;
                 text-align: left;
                 max-width: 45%;
                 margin-left: 10%;
-                .icon-jam{
-                    width:20px;
-                }
+                @include tablet{
+                padding-bottom: none;
+            }
                 .icon-jam{
                     position: relative;
                     .jam{
@@ -79,6 +88,10 @@
                         @include android{
                             left: 200px;
                             width: 25px;
+                        }
+                        @include tablet{
+                            left: 190px;
+                            width: 40px;
                         }
                     }
                 }
@@ -110,6 +123,10 @@
                     line-height: 40px;
                     letter-spacing: 0;
                 }
+                @include tablet{
+                    font-size: 2.2em;
+                    line-height: 40px
+            }
             }
             .quote{
                 font-family: $font;
@@ -121,9 +138,12 @@
                 @include android{
                     font-size: 12px;
                 }
+                @include tablet{
+                    font-size: 13px;
+                    padding-bottom: 10px;
+                }
             }
             .getButton{
-                
                 border-radius: 10px;
                 background-color: #25274D;
                 padding: 10px 40px;
@@ -133,8 +153,15 @@
                 text-decoration: none;
                 transition: all .2s ease;
                 color: #fff;
+                &:hover{
+                    background-color: #A9A9A9;
+                    color: black;
+                }
                 @include android{
-                    padding: 7px 25px;
+                    padding: 5px 15px;
+                }
+                @include tablet{
+                   padding: 7px 20px;
                 }
                 span{
                     font-family: $font;
@@ -144,6 +171,9 @@
                         pointer-events: none;
                         @include android{
                             font-size: 12px;
+                        }
+                         @include tablet{
+                            font-size: 13px;
                         }
                 }
             }

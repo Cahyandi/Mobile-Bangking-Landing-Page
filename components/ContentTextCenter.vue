@@ -1,10 +1,11 @@
+
 <template>
-<section class="center-text"data-scroll-section >
+<section class="center-text" data-scroll-section >
     <div class="container">
     <p class="text-Title">
         <strong>How it works</strong>
     </p>
-    <p class="text-content">
+    <p class="text-content" data-aos="fade-right">
         Mobile banking differs from mobile payments, which involes the use of a mobile device
     </p>
     </div>
@@ -20,6 +21,10 @@
     @include android{
         padding-top: 45px;
         padding-bottom: 20px;
+    }
+    @include tablet{
+        padding-top: 55px;
+        padding-bottom: 30px;
     }
     .container{
         text-align: center;
@@ -41,6 +46,10 @@
             font-size: 20px;
             line-height: 0px;
         }
+        @include tablet{
+            font-size : 28px;
+        }        
+
     }
     .text-content{
         margin: 0;
@@ -56,6 +65,11 @@
             line-height: 18px;
             max-width: 250px;
         }
+        @include tablet{
+            font-size: 15px;
+            line-height: 20px;
+            max-width: 320px;
+        }
     }
     }
 }
@@ -70,3 +84,14 @@
     }
 }
 </style>
+
+<script>
+    import AOS from 'aos'
+    import 'aos/dist/aos.css'
+
+export default {
+  mounted() {
+    AOS.init({ })
+  }
+}
+</script>

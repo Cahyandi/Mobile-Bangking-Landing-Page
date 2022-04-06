@@ -22,7 +22,7 @@
 
 .content-subscribe{
     padding-top: 20px;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
     @include android{
         padding-top: 90px;
         padding-bottom: 90px;
@@ -39,7 +39,7 @@
         .dashboard{
             
             input{
-                padding: 22px 50px;
+                padding: 18px 50px;
                 border-radius: 8px;
                 background-color: 	#F5F5F5;
                 border: 0.8px solid #FFF0F5;
@@ -53,7 +53,7 @@
             .btn-start{
                     border-radius: 10px;
                     background-color: #25274D;
-                    padding: 18px 40px;
+                    padding: 16px 40px;
                     display: inline-block;
                     cursor: pointer;
                     right: 25px;
