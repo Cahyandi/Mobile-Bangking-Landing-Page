@@ -9,7 +9,7 @@
         </a>
         
     </div>
-    <div class="column one" data-aos="fade-left">
+    <div class="column one" data-aos="zoom-out-left" data-aos-duration="2000">
         <img class="column-img" src= "../assets/images/connecting.png" title="" v-lazy-load>
     </div>
     </div>

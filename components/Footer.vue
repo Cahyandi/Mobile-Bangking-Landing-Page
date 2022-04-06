@@ -8,7 +8,7 @@
                         <p class="footer-link">
                         financial transactions remotely using a mobile device such as a smartphone or tablet
                         </p>
-                            <div class="icon">
+                            <div class="icon" data-aos="fade-right" data-aos-duration="1500">
                                 <img src="../assets/icon/f.png" />
                                 <img src="../assets/icon/twitter.png" />
                                 <img src="../assets/icon/in.png" />

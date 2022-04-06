@@ -1,18 +1,18 @@
 <template>
 <section class="download-app" data-scroll-section >
 <div class = "container">
-    <div class="column one" data-aos="fade-right" >
+    <div class="column one" data-aos="zoom-out-right" data-aos-duration="2000">
         <img class="column-img" src= "../assets/images/download.png" title="" v-lazy-load>
     </div>
     <div class="column two">
         <div class="title">Download mobile App</div>
         <div class="desc">Download Besnik mobile banking app for IOS and android. It helps you banking quickly and more smartly.</div>
         <div class="dashboard">
-        <a href="" class="app-store">
+        <a href="" class="app-store" data-aos="fade-right" data-aos-duration="2000">
             <img src="../assets/icon/icon appstore.png" title="" v-lazy-load/>
             <span>App Store</span>
         </a>
-        <a href="" class="play-store">
+        <a href="" class="play-store" data-aos="fade-left" data-aos-delay="400">
             <img src="../assets/icon/icon playstore.png" title="" v-lazy-load />
             <span>Play Store</span>
         </a>

@@ -1,11 +1,11 @@
 
 <template>
-<section class="center-text" data-scroll-section >
+<section class="center-text" data-scroll-section data-aos="fade-left" data-aos-duration="2000">
     <div class="container">
     <p class="text-Title">
         <strong>How it works</strong>
     </p>
-    <p class="text-content" data-aos="fade-right">
+    <p class="text-content" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
         Mobile banking differs from mobile payments, which involes the use of a mobile device
     </p>
     </div>
@@ -84,14 +84,3 @@
     }
 }
 </style>
-
-<script>
-    import AOS from 'aos'
-    import 'aos/dist/aos.css'
-
-export default {
-  mounted() {
-    AOS.init({ })
-  }
-}
-</script>

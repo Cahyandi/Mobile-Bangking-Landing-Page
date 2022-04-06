@@ -2,17 +2,17 @@
 <section class = "three-column" data-scroll-section>
     <div class = "container">
         <div class="content">
-            <div class="image"  data-aos="fade-up"><img src="../assets/images/tc1.png"/></div>
+            <div class="image"  data-aos="fade-up"  data-aos-duration="2000"><img src="../assets/images/tc1.png"/></div>
             <div class="title">Information</div>
             <div class="desc">Enter your information ensure your details safe and more secure</div>
         </div>
         <div class="content">
-            <div class="image"  data-aos="fade-down"><img src="../assets/images/tc2.png"/></div>
+            <div class="image"  data-aos="fade-down" data-aos-duration="3000"><img src="../assets/images/tc2.png"/></div>
             <div class="title">Data Secure</div>
             <div class="desc two">Sending  money faster & eaiser with end to end encryption.</div>
         </div>
         <div class="content">
-            <div class="image three"  data-aos="fade-up"><img src="../assets/images/tc3.png"/></div>
+            <div class="image three"  data-aos="fade-up"  data-aos-duration="2000"><img src="../assets/images/tc3.png"/></div>
             <div class="title">Add Cards</div>
             <div class="desc">Add Multiple cards and track your daily expense with quality interface</div>
         </div>
